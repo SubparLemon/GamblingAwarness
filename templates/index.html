@@ -5,57 +5,88 @@
     <title>Gambling Awareness</title>
     <script src="{{url_for('static', filename='index.js')}}"></script>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header" id="top_header">
         <div class="sidebar">
-            <button class="open-button" onclick="openNav()">Open Sidebar</button>
+            <i class="fa fa-bars" id="menu_button" onclick="openNav()"></i>
                 <div id="sidebar" class="sidebar-menu">
-                    <p class="close-button" onclick="closeNav()"> <strong> Close Sidebar </strong> </p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <i class="fa fa-close" id="close_button" onclick="closeNav()"></i>
+                    </div>
                     <div class="sidebar_items">
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem Ipsum</p>
-                        <p>Lorem Ipsum</p>
+                        <button onclick="topFunction()">Scroll to Top</button>
+                        <button onclick="scrollToElement('overview')">Overview</button>
+                        <button onclick="scrollToElement('article')">Articles</button>
+                        <button onclick="scrollToElement('quiz')">Quiz</button>
+                        <button onclick="scrollToElement('stories')">Stories</button>
+                        <button onclick="scrollToElement('discuss')">Discuss</button>
+                        <button onclick="scrollToElement('help')">Get help</button>
                     </div>
                 </div>
         </div>
         <h2 id="header_text">National Gambling Hotline: 0808 8020 133</h2>
     </div>
+    <div id="background">
+    <h1>Gamble Free</h1>
         <p>Welcome to my website. This website provides a variety of resources for those suffering from gambling addiction and anyone seeking information about gambling addiction</p>
-    <h1>Overview</h1>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum
-        , altera fabulas ut qorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-        concludaturque et eum, altera fabulas ut qorem ipsum dolor sit amet, illum definitiones
-        no quo, maluisset concludaturque et eum, altera fabulas ut qLorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae
-        gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Lorem ipsum dolor sit
-        amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.
-        Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae
-        nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Lorem ipsum dolor
-        sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas
-        ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-        repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.Lorem
-        ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
-        fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-        Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <h1>Articles</h1>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
-            fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <h1>Try our quiz to see if you are at risk of gambling addiction</h1>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
-            fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <h1>Stories and Testimonials</h1>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
-            fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <h1>Discuss gambling addiction anonymously with others</h1>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <h1>Get help</h1>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera
-            fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-            repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</body>
+    <h1 id="overview">Overview</h1>
+    <p><strong>Gambling addiction</strong>, also known as <em>pathological gambling</em> or <em>gambling disorder</em>, is a condition where individuals cannot control their gambling behavior despite the negative consequences it may have on their life. It is classified as a <strong>behavioral addiction</strong>, which means that individuals become addicted to certain behaviors rather than substances.</p>
+
+    <p>Gambling addiction can have a variety of negative effects on individuals' lives, including financial problems, relationship issues, legal trouble, and even mental health issues such as anxiety and depression. People with a gambling addiction may continue to gamble despite these negative consequences, often leading to a vicious cycle of continued gambling and worsening problems.</p>
+
+    <p>The causes of gambling addiction are complex and can involve a combination of biological, psychological, and environmental factors. Some potential risk factors for developing a gambling addiction include a family history of addiction, mental health disorders such as depression or anxiety, and stressful life events.</p>
+
+    <h1 id="article">Articles</h1>
+        <p>Articles on Gambling Addiction</p>
+        <table>
+        <tr>
+            <th>Title</th>
+            <th>Published</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td><a href="{{ row[1] }}">{{ row[0] }}</a></td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        <a href="/articles" class="navbutton">view more</a>
+        <h1 id="quiz">Try our 20 question quiz to see if you are at risk of gambling addiction</h1>
+            <div class="quiz-container">
+            <h2>Are you a compulsive gambler?</h2>
+                <div class="quiz-questions"></div>
+                <button id="submit-btn">Submit</button>
+            </div>
+        <h1 id="stories">Stories and Testimonials</h1>
+            <div class="storybox">
+                <h2 id="story-name">Robert</h2>
+                <p id="story-text">I never thought I had a gambling problem, I thought it was more of an enjoyment. But when you lose $15,000 on a single weekend in Vegas, you know there’s something wrong. That outdid when I was using heroin – that’s how bad I felt. You go in with your head up, you come out and your head’s down, and then you continue going back and taking chances. That’s a problem.
+
+I am still in recovery from addiction. I go to meetings, and I also go to different schools and talk to kids about getting high, and how peer pressure and boredom can make you a victim – whether it’s gambling, whether it’s drugs. All that stuff has an impact on your life – I wish I’d listened to my mother a little more closely!
+
+If I met someone at a Narcotics Anonymous meeting, and they told me they’re going to a casino, I would tell them: be careful, because gambling is another form of addiction. I wouldn’t tell them “don’t do it,” because that sometimes makes people want to do it even more. But they need to know it’s another form of addiction. You’ve got to take care of yourself.</p>
+            <p>Stories from Massachusetts Public Health Council</p>
+            <button onclick="cycleText()" class="navbutton">next story</button>
+        </div>
+        <h1 id="discuss">Discuss gambling addiction anonymously with others</h1>
+            <h2>Top Posts</h2>
+            {% for post in posts %}
+                <h2>{{ post[1] }}</h2>
+                <p>{{ post[2] }}</p>
+            {% endfor %}
+            <a href="{{ url_for('forum')}}" class="navbutton">View more and submit posts</a>
+        <h1 id="help">Get help</h1>
+            <p>If you or someone you know is struggling with gambling addiction, there are several resources available to help:</p>
+            <ul>
+                <li>National Council on Problem Gambling: This is a nonprofit organization that offers resources, support, and referrals to people affected by problem gambling. Their helpline is available 24/7 at 1-800-522-4700, and they also provide online chat and email support.</li>
+                <li>Gamblers Anonymous: This is a self-help organization that provides support for people struggling with gambling addiction. They offer meetings where people can share their experiences and support each other in their recovery.</li>
+                <li>The National Helpline: This is a free, confidential helpline for individuals and families affected by problem gambling. The helpline is available 24/7 and can be reached at 1-800-662-HELP (4357).</li>
+                <li>Gambling Therapy: This is an online service that provides information, support, and advice to people affected by gambling addiction. They offer online forums, chat rooms, and email support.</li>
+                <li>SMART Recovery: This is a science-based addiction recovery program that provides support for people struggling with all types of addictions, including gambling. They offer online meetings and resources to help people overcome their addiction.</li>
+                <li>In addition, many states have their own problem gambling helplines and treatment programs. Check with your state's department of health or human services for more information.</li>
+            </ul>
+        </div>
+    </body>
 </html>

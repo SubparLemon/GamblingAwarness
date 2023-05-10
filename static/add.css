@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    border: 1px solid #1e1e1e;
+    width: 80%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #047073;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #047073;
+}

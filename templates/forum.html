@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='forum.css') }}">
+    <script src="{{ url_for('static', filename='forum.js')}}"></script>
+</head>
+<body>
+    <a href="{{ url_for('add_post') }}" class="navbutton">Add a new post</a>
+    <table>
+        {% for post in posts %}
+            <tr>
+                <td><strong>{{ post[1] }} &emsp; Score:{{ post[5] }}</strong></td>
+                <td><button onclick="updateScore({{ post[0] }})">▲</button></td>
+            </tr>
+            <tr>
+                <td>{{ post[2] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <h1 id="article">Articles</h1>
+        <p>Articles on Gambling Addiction</p>
+        <table>
+        <tr>
+            <th>Title</th>
+            <th>Published</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td><a href="{{ row[1] }}">{{ row[0] }}</a></td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+</body>
+</html>

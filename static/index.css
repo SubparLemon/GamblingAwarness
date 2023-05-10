@@ -4,28 +4,59 @@ body {
 
 p {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     color: #232323;
 }
 
-h1 {
+li {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    color: #232323;
+}
+
+h1, h2 {
     color: #047073;
+    font-family: Arial, sans-serif;
 }
 
 #top_header {
     position: sticky;
     top: 0;
+    width: 100vw;
+    margin-top: -5px;
+    margin-left: -8px;
     font-family: Arial, sans-serif;
     font-size: 18px;
     color: #047073;
     display: flex;
     align-items: center;
+    background-color: #faf8f1;
+    border-bottom: 3px solid black;
+}
+
+#menu_button {
+    color: black;
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+#close_button {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#close_button:hover {
+    color: #fc3232;
 }
 
 #header_text {
+    padding-left: 5px;
     margin-left: 7px;
     margin-bottom: 2px;
-    margin-top: 4px;
+    margin-top: 3px;
+    font-size: 30px;
 }
 
 .sidebar-wrapper {
@@ -67,18 +98,97 @@ h1 {
     background-color: #555;
 }
 
-.close-button {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-}
-
-.close-button:hover {
-    color: #fd3535;
-}
-
-.sidebar_items p {
+.sidebar_items button {
+    border: none;
+    background-color: inherit;
+    font-size: 22px;
     color: white;
     padding-left: 8px;
+    margin-top: 8px;
+    display: block;
+}
+
+.sidebar_items button:hover {
+    color: #e7e7e7;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+th {
+    background-color: #047073;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #cecece;
+}
+
+#background h1 {
+    scroll-margin-top: 50px;
+}
+
+.navbutton {
+    display: inline-block;
+    border: 1px solid black;
+    margin-top: 13px;
+    margin-left: 1px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    padding: 6px;
+    background: #047073;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.quiz-container {
+    margin: auto;
+    width: 850px;
+    height: 750px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.quiz-container h2 {
+    font-family: Arial, sans-serif;
+    margin-left: 6px;
+    margin-bottom: 0;
+}
+
+.quiz-questions {
+    padding: 4px;
+    margin-left: 6px;
+}
+
+.question {
+    font-family: Arial, sans-serif;
+}
+
+#submit-btn {
+    background-color: #047073;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.storybox {
+    margin-left: 4px;
 }
